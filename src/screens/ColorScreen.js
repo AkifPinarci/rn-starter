@@ -20,11 +20,18 @@ const ColorScreen = () => {
         }}
       ></Button>
       <FlatList
+        contentContainerStyle={styles.list}
         keyExtractor={(item) => item}
         data={colors}
         renderItem={({ item }) => {
           return (
-            <View style={{ height: 100, width: 100, backgroundColor: item }} />
+            <View
+              style={{
+                height: 100,
+                width: 100,
+                backgroundColor: item,
+              }}
+            />
           );
         }}
       />
@@ -39,6 +46,13 @@ function randomRgb() {
   return `rgb(${red}, ${green}, ${blue})`;
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  list: {
+    alignItems: "stretch",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+  },
+});
 
 export default ColorScreen;

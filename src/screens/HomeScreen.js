@@ -63,6 +63,12 @@ const HomeScreen = ({ navigation }) => {
         }}
         title="Go to Example Demo"
       ></Button>
+      <Button
+        onPress={() => {
+          navigation.navigate("UserList");
+        }}
+        title="Go to UserList Redux Demo"
+      ></Button>
     </View>
   );
 };

@@ -11,6 +11,7 @@ import TextScreen from "./src/screens/TextScreen";
 import BoxScreen from "./src/screens/BoxScreen";
 import FlexScreen from "./src/screens/FlexScreen";
 import ExampleScreen from "./src/screens/ExampleScreen";
+import UserListScreen from "./src/screens/UserListScreen";
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
@@ -24,6 +25,7 @@ const navigator = createStackNavigator(
     Box: BoxScreen,
     Flex: FlexScreen,
     Example: ExampleScreen,
+    UserList: UserListScreen,
   },
   {
     initialRouteName: "Home",
